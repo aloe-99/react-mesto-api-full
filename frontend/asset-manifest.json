@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "./static/css/main.e1755297.css",
+    "main.js": "./static/js/main.fe692f43.js",
+    "static/js/787.a829ad37.chunk.js": "./static/js/787.a829ad37.chunk.js",
+    "static/media/Inter-Medium.woff": "./static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
+    "static/media/Inter-Black.woff": "./static/media/Inter-Black.c6938660eec019fefd68.woff",
+    "static/media/Inter-Regular.woff": "./static/media/Inter-Regular.8c206db99195777c6769.woff",
+    "static/media/Inter-Medium.woff2": "./static/media/Inter-Medium.293fd13dbca5a3e450ef.woff2",
+    "static/media/Inter-Black.woff2": "./static/media/Inter-Black.15ca31c0a2a68f76d2d1.woff2",
+    "static/media/Inter-Regular.woff2": "./static/media/Inter-Regular.c8ba52b05a9ef10f4758.woff2",
+    "static/media/header__logo.svg": "./static/media/header__logo.3d8293a241b315143f02a9df076e611b.svg",
+    "index.html": "./index.html",
+    "static/media/check_X.svg": "./static/media/check_X.df8eddf661ff88f2d0efd3d570d14309.svg",
+    "static/media/elements__like-button.svg": "./static/media/elements__like-button.77ea1611be45fdeca1cc.svg",
+    "static/media/Trash.svg": "./static/media/Trash.823b0cf1b0b7e9cb7cad.svg",
+    "static/media/check_V.svg": "./static/media/check_V.1b6082f862eac35e2514460237d96ecc.svg",
+    "static/media/elements__like-button_active.svg": "./static/media/elements__like-button_active.08af6fbb37d19d4aa333.svg",
+    "static/media/close-Icon.svg": "./static/media/close-Icon.039f1f5203f653b4bacde5e34ee2810b.svg",
+    "static/media/add-button.svg": "./static/media/add-button.bed8c136e13907f5eefb86d62a5fe29e.svg",
+    "static/media/profile__edit-button.svg": "./static/media/profile__edit-button.686ec1de24fcfb5046fa223baa74f3e4.svg",
+    "main.e1755297.css.map": "./static/css/main.e1755297.css.map",
+    "main.fe692f43.js.map": "./static/js/main.fe692f43.js.map",
+    "787.a829ad37.chunk.js.map": "./static/js/787.a829ad37.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1755297.css",
+    "static/js/main.fe692f43.js"
+  ]
+}
