@@ -4,6 +4,8 @@
 /* eslint-disable no-unused-vars */
 const express = require('express');
 
+require('dotenv').config();
+
 const mongoose = require('mongoose');
 
 const bodyParser = require('body-parser');
@@ -39,6 +41,12 @@ app.use(cookieParser());
 app.use(requestLogger);
 
 app.use(CORS);
+
+app.get('/crash-test', () => {
+  setTimeout(() => {
+    throw new Error('Сервер сейчас упадёт');
+  }, 0);
+});
 
 app.post('/signin', celebrate({
   body: Joi.object().keys({
