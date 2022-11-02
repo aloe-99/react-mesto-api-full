@@ -23,7 +23,7 @@ const { NODE_ENV, JWT_SECRET } = process.env;
 
 module.exports.getAllUsers = (req, res, next) => {
   User.find({})
-    .then((users) => res.send({ data: users }))
+    .then((users) => res.send(users))
     .catch(next);
 };
 
@@ -43,7 +43,7 @@ module.exports.createUser = (req, res, next) => {
         .then((obj) => {
           userId = obj._id.toString();
           User.findById(userId)
-            .then((user) => res.send({ data: user }))
+            .then((user) => res.send(user))
             .catch(next);
         })
         .catch((err) => {
@@ -61,7 +61,7 @@ module.exports.createUser = (req, res, next) => {
 
 module.exports.editUser = (req, res, next) => {
   User.findByIdAndUpdate(req.user._id, { name: req.body.name, about: req.body.about }, { new: true, runValidators: true, upsert: false })
-    .then((user) => res.send({ data: user }))
+    .then((user) => res.send(user))
     .catch((err) => {
       if (err.name === 'ValidationError') {
         next(new BadRequestError('Переданы некорректные данные'));
@@ -73,7 +73,7 @@ module.exports.editUser = (req, res, next) => {
 
 module.exports.editUserAvatar = (req, res, next) => {
   User.findByIdAndUpdate(req.user._id, { avatar: req.body.avatar }, { new: true, runValidators: true, upsert: false })
-    .then((user) => res.send({ data: user }))
+    .then((user) => res.send(user))
     .catch((err) => {
       if (err.name === 'ValidationError') {
         next(new BadRequestError('Переданы некорректные данные'));
@@ -89,14 +89,14 @@ module.exports.getUser = (req, res, next) => {
       if (!user) {
         throw new NotFoundError('Пользователь не найден');
       }
-      res.send({ data: user });
+      res.send(user);
     })
     .catch(next);
 };
 
 module.exports.getAboutMe = (req, res, next) => {
   User.findById(req.user._id)
-    .then((user) => res.send({ data: user }))
+    .then((user) => res.send(user))
     .catch(next);
 };
 
