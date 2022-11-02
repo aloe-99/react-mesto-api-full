@@ -13,7 +13,7 @@ const ForbiddenError = require('../errors/ForbiddenError');
 
 module.exports.getCards = (req, res, next) => {
   Card.find({})
-    .then((cards) => res.send({ data: [cards] }))
+    .then((cards) => res.send([cards]))
     .catch(next);
 };
 
@@ -21,7 +21,7 @@ module.exports.createCard = (req, res, next) => {
   const { name, link } = req.body;
   const owner = req.user._id;
   Card.create({ name, link, owner })
-    .then((cards) => res.send({ data: [cards] }))
+    .then((cards) => res.send([cards]))
     .catch((err) => {
       if (err.name === 'ValidationError') {
         next(new BadRequestError('Переданы некорректные данные'));
@@ -78,7 +78,7 @@ module.exports.deleteCard = (req, res, next) => {
       const owner = card.owner.toString();
       if (owner === user) {
         Card.findByIdAndRemove(cardId)
-          .then((cards) => res.send({ data: cards }))
+          .then((cards) => res.send([cards]))
           .catch(next);
       } else {
         next(new ForbiddenError('Доступ к запрашиваемому ресурсу заблокирован'));
