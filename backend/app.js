@@ -2,9 +2,9 @@
 /* eslint-disable no-useless-escape */
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
-const express = require('express');
-
 require('dotenv').config();
+
+const express = require('express');
 
 const mongoose = require('mongoose');
 

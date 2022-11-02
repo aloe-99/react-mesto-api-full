@@ -3,6 +3,8 @@
 /* eslint-disable import/no-unresolved */
 /* eslint-disable max-len */
 /* eslint-disable consistent-return */
+require('dotenv').config();
+
 const bcrypt = require('bcrypt');
 
 const jwt = require('jsonwebtoken');
@@ -115,6 +117,7 @@ module.exports.login = (req, res, next) => {
       res.send({ token });
     })
     .catch((err) => {
+      console.log('ОШИБКА В login');
       next(new AuthorizationError(err.message));
     });
 };
