@@ -38,7 +38,7 @@ module.exports.likeCard = (req, res, next) => {
     { new: true },
   )
     .orFail(new NotFoundError('Запрашиваемый объект не найден'))
-    .then((card) => res.send({ data: card }))
+    .then((card) => res.send(card))
     .catch((err) => {
       if (err.name === 'NotFoundError') {
         next(new NotFoundError('Запрашиваемый объект не найден'));
@@ -57,7 +57,7 @@ module.exports.removeLike = (req, res, next) => {
     { new: true },
   )
     .orFail(new NotFoundError('Запрашиваемый объект не найден'))
-    .then((card) => res.send({ data: card }))
+    .then((card) => res.send(card))
     .catch((err) => {
       if (err.name === 'NotFoundError') {
         next(new NotFoundError('Запрашиваемый объект не найден'));
