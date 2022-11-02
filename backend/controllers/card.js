@@ -13,7 +13,7 @@ const ForbiddenError = require('../errors/ForbiddenError');
 
 module.exports.getCards = (req, res, next) => {
   Card.find({})
-    .then((cards) => res.send({ data: cards }))
+    .then((cards) => res.send({ data: [cards] }))
     .catch(next);
 };
 
@@ -21,7 +21,7 @@ module.exports.createCard = (req, res, next) => {
   const { name, link } = req.body;
   const owner = req.user._id;
   Card.create({ name, link, owner })
-    .then((cards) => res.send({ data: cards }))
+    .then((cards) => res.send({ data: [cards] }))
     .catch((err) => {
       if (err.name === 'ValidationError') {
         next(new BadRequestError('Переданы некорректные данные'));
