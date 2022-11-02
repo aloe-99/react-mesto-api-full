@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/aloe-99/mesto-react/static/css/main.5fd08771.css",
-    "main.js": "/aloe-99/mesto-react/static/js/main.56b5ea15.js",
+    "main.js": "/aloe-99/mesto-react/static/js/main.c6f27a7b.js",
     "static/js/787.a829ad37.chunk.js": "/aloe-99/mesto-react/static/js/787.a829ad37.chunk.js",
     "static/media/Inter-Medium.woff": "/aloe-99/mesto-react/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
     "static/media/Inter-Black.woff": "/aloe-99/mesto-react/static/media/Inter-Black.c6938660eec019fefd68.woff",
@@ -20,11 +20,11 @@
     "static/media/add-button.svg": "/aloe-99/mesto-react/static/media/add-button.bed8c136e13907f5eefb86d62a5fe29e.svg",
     "static/media/profile__edit-button.svg": "/aloe-99/mesto-react/static/media/profile__edit-button.686ec1de24fcfb5046fa223baa74f3e4.svg",
     "main.5fd08771.css.map": "/aloe-99/mesto-react/static/css/main.5fd08771.css.map",
-    "main.56b5ea15.js.map": "/aloe-99/mesto-react/static/js/main.56b5ea15.js.map",
+    "main.c6f27a7b.js.map": "/aloe-99/mesto-react/static/js/main.c6f27a7b.js.map",
     "787.a829ad37.chunk.js.map": "/aloe-99/mesto-react/static/js/787.a829ad37.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5fd08771.css",
-    "static/js/main.56b5ea15.js"
+    "static/js/main.c6f27a7b.js"
   ]
 }
