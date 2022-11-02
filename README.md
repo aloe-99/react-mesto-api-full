@@ -7,3 +7,5 @@ IP 62.84.113.138
 Frontend http://mesto.aloe.nomoredomains.icu/
 
 Backend http://api.mesto.aloe.nomoredomains.icu/
+
+Ссылка на репозиторий GitHub: https://github.com/aloe-99/react-mesto-api-full
