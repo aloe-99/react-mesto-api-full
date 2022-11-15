@@ -3,8 +3,6 @@
 /* eslint-disable import/no-unresolved */
 /* eslint-disable max-len */
 /* eslint-disable consistent-return */
-require('dotenv').config();
-
 const bcrypt = require('bcrypt');
 
 const jwt = require('jsonwebtoken');
@@ -107,7 +105,7 @@ module.exports.login = (req, res, next) => {
     .then((user) => {
       const token = jwt.sign(
         { _id: user._id },
-        NODE_ENV === 'production' ? JWT_SECRET : 'dev-secret',
+        NODE_ENV === 'production' ? JWT_SECRET : 'karambola',
         { expiresIn: '7d' },
       );
       res.send({ token });
